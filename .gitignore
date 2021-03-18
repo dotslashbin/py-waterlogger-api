@@ -2,3 +2,4 @@
 bin/
 env/
 dist/
+__pycache__
