@@ -2,7 +2,7 @@ import pathlib
 from setuptools import setup
 
 HERE = pathlib.Path(__file__).parent
-README = (HERE / README.md).read_text()
+README = (HERE / "README.md").read_text()
 
 setup(
 	name="clickboxer-watertracker",
@@ -10,7 +10,7 @@ setup(
 	description="An API server for the watertracker app",
 	long_description=README,
 	long_description_content_type="text/markdown",
-	# url="https://github.com/realpython/reader",
+	url="https://github.com/dotslashbin/py-waterlogger-api",
 	author="Joshua Fuentes",
 	author_email="joshuarpf@gmail.com",
 	license="MIT",
@@ -19,12 +19,12 @@ setup(
 			"Programming Language :: Python :: 3",
 			"Programming Language :: Python :: 3.9",
 	],
-	packages=["jotest"],
+	# packages=["jotest"],
 	include_package_data=True,
 	# install_requires=["feedparser", "html2text"],
-	entry_points={
-			"console_scripts": [
-					"jotest=jotest.__main__:main",
-			]
-	},
+	# entry_points={
+	# 		"console_scripts": [
+	# 				"jotest=jotest.__main__:main",
+	# 		]
+	# },
 )
