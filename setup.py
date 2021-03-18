@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
 	name="clickboxer-watertracker",
-	version="0.0.1",
+	version="0.1.0",
 	description="An API server for the watertracker app",
 	long_description=README,
 	long_description_content_type="text/markdown",
@@ -21,10 +21,10 @@ setup(
 	],
 	# packages=["jotest"],
 	include_package_data=True,
-	# install_requires=["feedparser", "html2text"],
-	# entry_points={
-	# 		"console_scripts": [
-	# 				"jotest=jotest.__main__:main",
-	# 		]
-	# },
+	# install_requires=["flask"],
+	entry_points={
+			"console_scripts": [
+					"wtracker=wtracker.__main__:main",
+			]
+	},
 )
