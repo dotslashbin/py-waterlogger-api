@@ -1,7 +1,10 @@
-from flask import Flask
+from wtracker.handlers.gets import GetProcessor
+from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/')
+path_index = '/'
+@app.route(path_index)
 def index():
-  return "this is the index"
+	result = GetProcessor(request.args, path_index)
+	return "from routers"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        

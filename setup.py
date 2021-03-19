@@ -6,7 +6,7 @@ README = (HERE / "README.md").read_text()
 
 setup(
 	name="clickboxer-watertracker",
-	version="0.1.2",
+	version="0.1.4",
 	description="An API server for the watertracker app",
 	long_description=README,
 	long_description_content_type="text/markdown",
